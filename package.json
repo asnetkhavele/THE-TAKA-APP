@@ -1,0 +1,36 @@
+{
+  "name": "the-taka-app",
+  "version": "1.0.0",
+  "description": "Taka App Project. Solution to help in waste management",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node server.js",
+    "build": "echo 'No build step required'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asnetkhavele/THE-TAKA-APP.git"
+  },
+  "keywords": [
+    "Taka",
+    "App",
+    "Solid",
+    "Waste",
+    "Management",
+    "Clean",
+    "Environment"
+  ],
+  "author": "Patrick And Asnet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asnetkhavele/THE-TAKA-APP/issues"
+  },
+  "homepage": "https://github.com/asnetkhavele/THE-TAKA-APP#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3",
+    "path": "^0.12.7"
+  }
+}

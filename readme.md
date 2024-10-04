@@ -1,3 +1,3 @@
 Patrick Vs Asnet
 
-# clone then start developing the frontend.
+# all frontends files in the public folder
