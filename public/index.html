@@ -1,1 +1,96 @@
-<!-- write your frontend html here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Waste Management App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            color: gray;
+        }
+        .star:hover,
+        .star.selected {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Waste Management Community App</h1>
+        <label for="language-select">Select Language:</label>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="sw">Swahili</option>
+            <option value="ki">Kikuyu</option>
+            <option value="lu">Luo</option>
+            <option value="lh">Luhya</option>
+            <option value="ka">Kalenjin</option>
+            <option value="km">Kamba</option>
+            <option value="ma">Maasai</option>
+            <option value="me">Meru</option>
+            <option value="ta">Taita</option>
+            <option value="tu">Turkana</option>
+            <option value="em">Embu</option>
+            <option value="gi">Gikuyu</option>
+            <option value="na">Nandi</option>
+            <option value="so">Somali</option>
+            <option value="re">Rendille</option>
+            <option value="po">Pokot</option>
+            <option value="di">Digo</option>
+            <option value="ch">Chaga</option>
+            <option value="ki">Kisii</option>
+            <option value="te">Teso</option>
+            <option value="sa">Samburu</option>
+            <option value="ab">Abagusii</option>
+            <option value="sh">Shubi</option>
+            <option value="ku">Kuria</option>
+            <option value="mj">Mijikenda</option>
+            <option value="og">Ogiek</option>
+            <option value="nu">Nubi</option>
+            <!-- Add other local languages as needed -->
+        </select>
+    </header>
+    
+    <main>
+        <section id="report-issue">
+            <h2>Report an Issue</h2>
+            <form id="issue-form">
+                <input type="text" id="location" placeholder="Location" required>
+                <button type="button" id="get-location">Use My Location</button>
+                <textarea id="description" placeholder="Describe the issue" required></textarea>
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+        <section id="feedback">
+            <h2>Rate Our Service</h2>
+            <div id="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" id="rating" value="">
+            <textarea id="comments" placeholder="Comments"></textarea>
+            <button type="submit" id="feedback-submit">Submit Feedback</button>
+        </section>
+
+        <section id="education">
+            <h2>Educational Resources</h2>
+            <p>Learn about recycling and waste management.</p>
+            <ul>
+                <li><a href="#">What can be recycled?</a></li>
+                <li><a href="#">How to sort waste</a></li>
+                <!-- Add more resources as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
