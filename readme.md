@@ -4,7 +4,7 @@ Patrick Vs Asnet
 
 ## On your local machine from the root folder
 *Run "npm install"
-*Run "npm run dev"
+*Run "npm run start"
 
 Access the whole  project from your browser using the url
 ## [http://localhost:3000](http://localhost:3000)
